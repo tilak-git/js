@@ -1,0 +1,49 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  overflow-x: hidden;
+}
+
+input {
+  border: 1px black solid;
+}
+
+.chat-container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.messages-container {
+  /* overflow-y: auto;  */
+  flex-grow: 1;
+}
+
+/* Individual message */
+.message {
+  margin: 5px 10px;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #f0f0f0;
+}
+
+/* Style for sender's messages */
+.message.sent {
+  align-self: flex-end;
+  background-color: #dcf8c6; /* Example color */
+}
+
+/* Style for receiver's messages */
+.message.received {
+  align-self: flex-start;
+  background-color: #eaeaea; /* Example color */
+}
+
+.msgg {
+  width: 100%;
+  max-width: 100%;
+  line-break: anywhere;
+  /* text-align: right; */
+}
